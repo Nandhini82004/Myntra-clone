@@ -1,0 +1,228 @@
+/* Universal Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+}
+
+body {
+    background-color: #ffeef2; /* Light pink background gradient feel */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo {
+    height: 36px;
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 20px 0;
+    margin-right: 25px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.search-container {
+    width: 70%;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    background-color: #f5f5f6;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 15px 10px 40px;
+    font-size: 14px;
+    color: #282c3f;
+    outline: none;
+}
+
+.search-container input::placeholder {
+    color: #94969f;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 18px;
+    color: #282c3f;
+}
+
+.icon-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #282c3f;
+    margin-top: 3px;
+}
+
+/* Main Content Container */
+.main-container {
+    margin-top: 80px; /* To prevent overlapping behind fixed navbar */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Login Card Box */
+.login-box {
+    background-color: #ffffff;
+    width: 420px;
+    border-radius: 0px; /* Straight clean edges like image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Form Layout */
+.form-container {
+    padding: 40px 35px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #424553;
+    margin-bottom: 25px;
+}
+
+.form-title .light-text {
+    font-weight: 400;
+    color: #7e818c;
+}
+
+/* Input Fields */
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4d5d9;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.country-code {
+    font-size: 14px;
+    color: #282c3f;
+}
+
+.divider {
+    color: #d4d5d9;
+    margin: 0 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #282c3f;
+}
+
+/* Checkbox & Terms */
+.terms-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.terms-container input[type="checkbox"] {
+    margin-top: 3px;
+    accent-color: #ff3f6c; /* Pink checkbox theme */
+    cursor: pointer;
+}
+
+.terms-container label {
+    font-size: 12px;
+    color: #7e818c;
+    line-height: 1.5;
+}
+
+.pink-link {
+    color: #ff3f6c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pink-link:hover {
+    text-decoration: underline;
+}
+
+/* Continue Button */
+.continue-btn {
+    width: 100%;
+    background-color: #ff3f6c; /* Myntra Pink */
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 25px;
+}
+
+.continue-btn:hover {
+    background-color: #e0355f;
+}
+
+/* Help Section Footer */
+.help-text {
+    font-size: 12px;
+    color: #282c3f;
+    text-align: left;
+}

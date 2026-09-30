@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    height:80px;
+    width:100%;
+    background-color:white;
+    box-shadow:30px 0px;
+    display: flex;
+    position: fixed;
+    z-index:20;
+    box-shadow: 0px 3px 10px rgb(0,0,0,0.10);
+}
+.navbar img{
+    height:50px;
+    width:90px;
+    margin-top:30px;
+}
+.navbar ul,li{
+    display: flex;
+    gap:30px;
+    padding-top:20px;
+    font-weight:bold;
+}
+.search{
+ position:relative;
+ width: 250px;
+}
+.search input{
+    height:40px;
+    width:350px;
+    border-radius:10px;
+    border: none;
+    background-color: whitesmoke;
+    padding-left:50px;
+    position: relative;
+    top:30px;
+    left:100px;
+}
+.search i{
+    position:absolute;
+    display: flex;
+    left:120px;
+    top:45px;
+}
+.s1 {
+    margin-left:auto;
+    margin-right:40px;
+    display: flex;
+    gap: 30px; 
+    align-items: center; 
+    padding-top:20px;
+} 
+.s2{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px; 
+}
+.s2 i{
+    font-size:20px; 
+}
+.s2 span{ 
+    font-size: 14px;
+}
+.c1 {
+  width: 100%;
+  overflow: hidden;
+}
+.box2 {
+  display: flex;
+  width:300%;
+  padding-top:150px;
+  animation: primeScroll 12s infinite ease-in-out;
+}
+
+.box2 img {
+  width: 33.333%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes primeScroll {
+  /* Image 1 Display */
+  0%, 28% {
+    transform: translateX(0%);
+  }
+  33.333%, 61% {
+    transform: translateX(-33.333%);
+  }
+  66.666%, 94% {transform: translateX(-66.666%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

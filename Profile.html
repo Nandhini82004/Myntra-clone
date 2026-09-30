@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Login Signup Clone</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navbar Section -->
+    <header class="navbar">
+        <div class="nav-left">
+            <!-- Replace logo.png with your actual logo path -->
+            <img src=".//images.1/logo.jpg" alt="Myntra Logo" class="logo">
+            <nav class="nav-links">
+                <a href=".//Men.html">MEN</a>
+                <a href=".//Women.html">WOMEN</a>
+                <a href=".//Kids.html">KIDS</a>
+                <a href=".//Home.html">HOME </a>
+                <a href="#">STUDIO</a>
+            </nav>
+        </div>
+        
+        <div class="nav-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products, brands and more">
+            </div>
+            <div class="nav-icons">
+                <div class="icon-item">
+              <a href=".//Wish.html"><i class="fa-regular fa-heart"></i></a>
+                    <span class="icon-text">Wishlist</span>
+                </div>
+                <div class="icon-item">
+              <a href=".//bag.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <span class="icon-text">Bag</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container Section -->
+    <main class="main-container">
+        <div class="login-box">
+            <!-- Banner Image -->
+            <!-- Replace banner.png with your actual banner image path -->
+            <img src=".//images.1/offer.jpg" alt="Flat 300 Off Banner" class="banner-img">
+            
+            <!-- Login/Signup Form -->
+            <div class="form-container">
+                <h2 class="form-title">Login <span class="light-text">or</span> Signup</h2>
+                
+                <div class="input-group">
+                    <span class="country-code">+91</span>
+                    <span class="divider">|</span>
+                    <input type="tel" placeholder="Mobile Number*" maxlength="10" required>
+                </div>
+                
+                <div class="terms-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        By continuing, I agree to the <a href="#" class="pink-link">Terms of Use</a> & <a href="#" class="pink-link">Privacy Policy</a> and I am above 18 years old.
+                    </label>
+                </div>
+                
+                <button type="submit" class="continue-btn">CONTINUE</button>
+                
+                <p class="help-text">Have trouble logging in? <a href="#" class="pink-link">Get help</a></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
